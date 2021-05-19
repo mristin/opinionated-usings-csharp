@@ -51,7 +51,7 @@ function Main
     }
 
     Write-Host "${nl}Check.ps1: Running the unit tests...${nl}"
-    dotnet test /p:CollectCoverage=true
+    dotnet test /p:CollectCoverage=true /p:CoverletOutputFormat=opencover
     if ($LASTEXITCODE -ne 0)
     {
         throw "The unit tests failed."

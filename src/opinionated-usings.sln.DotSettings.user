@@ -12,8 +12,7 @@
 &lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=ffa65234_002Da6de_002D4d2c_002D917b_002D9bdb6586b522/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="Test_with_valid_usings #3" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
-    &lt;TestId&gt;NUnit3x::754392CE-94CE-4AA0-B316-E915993B96B3::net5.0::OpinionatedUsings.Tests.InspectTests&lt;/TestId&gt;&#xD;
-    &lt;TestId&gt;NUnit3x::754392CE-94CE-4AA0-B316-E915993B96B3::net5.0::OpinionatedUsings.Tests.ProgramTests.Test_outcast_using_directives_reported&lt;/TestId&gt;&#xD;
-    &lt;TestId&gt;NUnit3x::754392CE-94CE-4AA0-B316-E915993B96B3::net5.0::OpinionatedUsings.Tests.ProgramTests.Test_recorded_output_on_fails&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::754392CE-94CE-4AA0-B316-E915993B96B3::.NETCoreApp,Version=v3.1::OpinionatedUsings.Tests.InspectTests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::754392CE-94CE-4AA0-B316-E915993B96B3::.NETCoreApp,Version=v3.1::OpinionatedUsings.Tests.ProgramTests.Test_recorded_output_on_fails&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

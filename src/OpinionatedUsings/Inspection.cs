@@ -318,8 +318,8 @@ namespace OpinionatedUsings
 
             if (previousAliased != null
                 && string.Compare(
-                    previousAliased.Name.ToString(),
-                    node.Name.ToString(),
+                    previousAliased.Alias.Name.ToString(),
+                    node.Alias.ToString(),
                     StringComparison.InvariantCulture) > 0)
             {
                 var line = previousAliased
@@ -328,9 +328,12 @@ namespace OpinionatedUsings
                     .StartLinePosition.Line;
 
                 (result ??= new List<string>()).Add(
-                    $"Expected aliased using directive " +
+                    $"Expected the alias {Quote(node.Alias.Name.ToString())} " +
+                    $"from the using directive " +
                     $"{Quote(node.ToString().TrimEnd())} " +
-                    $"before the previous aliased using directive " +
+                    $"before the previous " +
+                    $"alias {Quote(previousAliased.Alias.Name.ToString())} " +
+                    $"from the using directive " +
                     Quote(previousAliased.ToString().TrimEnd()) +
                     $" at line {line + 1} (by alphabetical order).");
             }

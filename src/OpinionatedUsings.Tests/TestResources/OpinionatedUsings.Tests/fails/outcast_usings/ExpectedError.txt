@@ -1,9 +1,11 @@
 FAILED: <path>
  * Line 1, column 1:
    * Expected an aliased using directive "using SysFile = System.IO.File;" with the alias different from the name to have the marking comment `// renamed`, but found no marking comment.
+ * Line 2, column 1:
+   * Expected the alias "Path" from the using directive "using Path = System.IO.Path;" before the previous alias "SysFile" from the using directive "using SysFile = System.IO.File;" at line 1 (by alphabetical order).
  * Line 3, column 1:
-   * Unrecognized marking comment for the using directive "using SystemUri = System.Uri;": " // unknown\n"
+   * Unrecognized marking comment for the using directive "using SystemUri = System.Uri;": " // unknown"
  * Line 5, column 1:
-   * Expected a non-aliased using directive "using System.Linq;" to be explicitly marked with `// can't alias` comment, but found the marking: "  // renamed\n"
+   * Expected a non-aliased using directive "using System.Linq;" to be explicitly marked with `// can't alias` comment, but found the marking: "  // renamed"
 
 One or more using directives in your code base do not conform to the expected style. Please see above.

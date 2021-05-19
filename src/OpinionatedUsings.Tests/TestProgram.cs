@@ -3,7 +3,8 @@ using Environment = System.Environment;
 using File = System.IO.File;
 using Path = System.IO.Path;
 
-using NUnit.Framework;  // can't alias
+using NUnit.Framework;
+using NUnit.Framework.Internal; // can't alias
 
 namespace OpinionatedUsings.Tests
 {

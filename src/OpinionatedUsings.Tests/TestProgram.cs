@@ -102,26 +102,24 @@ namespace OpinionatedUsings.Tests
 
                 Assert.AreEqual(1, exitCode);
 
+                string gotOut = consoleCapture.Output()
+                    .Replace(path, "<path>")
+                    .Replace("\r\n", "\n");
+
+                string gotErr = consoleCapture.Error()
+                    .Replace(path, "<path>")
+                    .Replace("\r\n", "\n");
+
                 string outputPath = Path.Join(caseDir, "ExpectedOutput.txt");
                 string expectedOut = File.ReadAllText(outputPath)
-                    .Replace(path, "<path>")
                     .Replace("\r\n", "\n");
 
                 string errPath = Path.Join(caseDir, "ExpectedError.txt");
                 string expectedErr = File.ReadAllText(errPath)
-                    .Replace(path, "<path>")
                     .Replace("\r\n", "\n");
 
-                Assert.AreEqual(
-                    expectedOut,
-                    consoleCapture.Output()
-                        .Replace(path, "<path>")
-                        .Replace("\r\n", "\n"));
-                Assert.AreEqual(
-                    expectedErr,
-                    consoleCapture.Error()
-                        .Replace(path, "<path>")
-                        .Replace("\r\n", "\n"));
+                Assert.AreEqual(expectedOut, gotOut);
+                Assert.AreEqual(expectedErr, gotErr);
             }
         }
     }

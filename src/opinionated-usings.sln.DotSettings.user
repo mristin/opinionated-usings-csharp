@@ -15,4 +15,8 @@
     &lt;TestId&gt;NUnit3x::754392CE-94CE-4AA0-B316-E915993B96B3::.NETCoreApp,Version=v3.1::OpinionatedUsings.Tests.InspectTests&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;NUnit3x::754392CE-94CE-4AA0-B316-E915993B96B3::.NETCoreApp,Version=v3.1::OpinionatedUsings.Tests.ProgramTests.Test_recorded_output_on_fails&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
-&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
+&lt;/SessionState&gt;</s:String>
+	
+	
+	
+	</wpf:ResourceDictionary>

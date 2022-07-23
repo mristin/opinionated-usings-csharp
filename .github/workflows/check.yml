@@ -26,16 +26,11 @@ jobs:
       - name: Install .NET
         uses: actions/setup-dotnet@v1
         with:
-          dotnet-version: '3.1.100'
+          dotnet-version: '6.0.201'
 
       - name: Install tools
         working-directory: src
         run: dotnet tool restore
-
-      - name: Install coveralls.net (to send test coverage)
-        working-directory: src
-        if: github.repository == 'mristin/opinionated-usings-csharp'
-        run: dotnet tool install coveralls.net --version 2.0.0-beta0002
 
       - name: Check
         working-directory: src

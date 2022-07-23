@@ -13,7 +13,7 @@ function Main
     $nl = [System.Environment]::NewLine
 
     Write-Host "Check.ps1: Checking the format...$nl"
-    dotnet format --check
+    dotnet format --verify-no-changes
     if ($LASTEXITCODE -ne 0)
     {
         throw "Format check failed."
